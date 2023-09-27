@@ -1,15 +1,15 @@
 FROM node:18-alpine
 
-WORKDIR /frontend
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
+#Install dependencies
 COPY package*.json ./
-
 RUN npm install
 
+#Copy source files
 COPY . .
 
-EXPOSE 3000
-
-CMD npm run dev
-
+#Running the app
+CMD ["npm", "run", "dev"]
 

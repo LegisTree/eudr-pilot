@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, build the docker container:
+First, build the docker container. If you have the Docker Desktop app you can run: 
 
 docker-compose build
 
