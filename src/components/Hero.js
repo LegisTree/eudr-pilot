@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="w-full md:w-1/2">
         <div className="w-full h-full relative flex flex-row justify-center">
           <Image
-            src="/images/tree.jpg"
+            src="images/tree.jpg"
             alt="tree"
             width={500}
             height={500}
