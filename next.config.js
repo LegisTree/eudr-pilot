@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-
- // Add basePath
- basePath: '/eudr-pilot',  
+  output: "standalone",
 };
 
 module.exports = nextConfig;

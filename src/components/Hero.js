@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row w-full min-h-[20rem]">
-      <div className="flex flex-col items-center w-full md:w-1/2 p-4">
+      <div className="flex flex-col items-center w-full md:w-1/2 p-4 pl-24">
         <div className="pl-4">
           <h1>Do you know if your product is legal by EU law?</h1>
           <p className="text-xl">
@@ -18,17 +18,15 @@ export default function Hero() {
       </div>
       <div className="w-full md:w-1/2">
         <div className="w-full h-full relative flex flex-row justify-center">
-          <Image
-            src="images/tree.jpg"
+          {/* eslint-disable @next/next/no-img-element */}
+          <img
+            src="/images/tree.jpg"
             alt="tree"
-            width={500}
-            height={500}
-            style={{ objectFit: "contain" }}
+            width="100%"
+            height="auto"
+            className="object-cover object-center h-full w-full"
           />
         </div>
-        {/* eslint-disable @next/next/no-img-element */}
-
-        <img></img>
       </div>
     </div>
   );
