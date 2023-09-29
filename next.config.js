@@ -16,7 +16,6 @@ module.exports = (phase, { defaultConfig }) => {
     ...defaultConfig,
     output: "export",
     // Add basePath
-    basePath: '/eudr-pilot', 
-    assetPrefix: '/'
+    basePath: '/eudr-pilot'
   };
 };
