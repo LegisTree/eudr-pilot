@@ -7,14 +7,14 @@ export default function Home() {
     card1: {
       title: "Kaart 1",
       text: "Hier een korte tekst over het eerste handelingsperspectief. Zo tadaa.",
-      imgSource: "images/tree.jpg",
+      imgSource: "/images/tree.jpg",
       buttonText: "Klik hier",
       buttonLink: "./about",
     },
     card2: {
       title: "Kaart 2",
       text: "Hier een korte tekst over het tweede handelingsperspectief. Zo tadaa. Deze tekst is wel wat langer.",
-      imgSource: "images/tree.jpg",
+      imgSource: "/images/tree.jpg",
       buttonText: "Nee, klik hier",
       buttonLink: "./eudr",
     },
