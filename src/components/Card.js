@@ -8,7 +8,7 @@ export default function Card({ cardData }) {
         {/* eslint-disable @next/next/no-img-element */}
         <img
           src={cardData.imgSource}
-          alt="tree"
+          alt={cardData.alt}
           width="100%"
           height="auto"
           className="object-cover object-center h-full w-full rounded-t-lg duration-300 ease-in group-hover:brightness-100 group-hover:scale-110 max-w-none max-h-none brightness-90 overflow-hidden"
