@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="w-full h-full relative flex flex-row justify-center">
           {/* eslint-disable @next/next/no-img-element */}
           <img
-            src="/images/tree.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/tree.jpg`}
             alt="tree"
             width="100%"
             height="auto"

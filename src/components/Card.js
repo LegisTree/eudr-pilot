@@ -7,7 +7,7 @@ export default function Card({ cardData }) {
       <span className="overflow-hidden text-center relative w-full h-1/2">
         {/* eslint-disable @next/next/no-img-element */}
         <img
-          src={cardData.imgSource}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${cardData.imgSource}`}
           alt="tree"
           width="100%"
           height="auto"
