@@ -7,8 +7,10 @@ export default function Card({ cardData }) {
       <span className="overflow-hidden text-center relative w-full h-1/2">
         {/* eslint-disable @next/next/no-img-element */}
         <img
-          src={cardData.imgSource}
-          alt={cardData.alt}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${
+            cardData.imgSource
+          }`}
+          alt="tree"
           width="100%"
           height="auto"
           className="object-cover object-center h-full w-full rounded-t-lg duration-300 ease-in group-hover:brightness-100 group-hover:scale-110 max-w-none max-h-none brightness-90 overflow-hidden"

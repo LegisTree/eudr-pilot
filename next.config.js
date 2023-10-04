@@ -1,6 +1,22 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "standalone",
-};
 
-module.exports = nextConfig;
+module.exports = (phase, { defaultConfig }) => {
+  // Check if the environment is for local development or production export
+  const isDev = process.env.NODE_ENV === 'development';
+
+  if (isDev) {
+    return {
+      ...defaultConfig,
+      output: "standalone",
+    };
+  }
+
+  // Configuration for production export
+  return {
+    ...defaultConfig,
+    output: "export",
+    // Add basePath
+    basePath: '/eudr-pilot',
+    assetPath: '/eudr-pilot'
+  };
+};
