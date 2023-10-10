@@ -6,6 +6,7 @@ import { cards, block } from "../data/content";
 
 export default function Home() {
   console.log(block);
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Hero></Hero>

@@ -1,7 +1,7 @@
 export default function TwoColumnBlock(blockData) {
   const rowOrder = blockData.reversed ? "flex-row-reversed" : "flex-row";
   return (
-    <div className={`flex ${rowOrder}`}>
+    <div className={`flex ${rowOrder} w-full`}>
       <div className="image w-full md:w-1/3">
         {/* eslint-disable @next/next/no-img-element */}
         <img
@@ -12,9 +12,9 @@ export default function TwoColumnBlock(blockData) {
           className="object-cover object-center h-full w-full"
         />
       </div>
-      <div className="text w-full md:w2/3">
+      <div className="text w-full md:w-2/3">
         {blockData.title && <h3>{blockData.title}</h3>}
-        <p>{blockData.text}</p>
+        <p>Hallo hier wat tekst</p>
         {blockData.buttonLink && (
           <Link className="btn-blue" href={blockData.buttonLink}>
             {blockData.buttonText}
