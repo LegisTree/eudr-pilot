@@ -1,23 +1,28 @@
+import Link from "next/link";
+import Image from "./Image";
+
 export default function TwoColumnBlock(blockData) {
-  const rowOrder = blockData.reversed ? "flex-row-reversed" : "flex-row";
+  const content = blockData.blockData;
+
+  const rowOrder = content.reversed ? "md:flex-row-reversed" : "md:flex-row";
   return (
-    <div className={`flex ${rowOrder} w-full`}>
-      <div className="image w-full md:w-1/3">
-        {/* eslint-disable @next/next/no-img-element */}
-        <img
-          src={blockData.imgSource}
-          alt={blockData.imgAlt}
-          width="100%"
-          height="auto"
-          className="object-cover object-center h-full w-full"
+    <div className={`flex ${rowOrder} w-full flex-col w-full min-h-[20rem]`}>
+      <div className="image w-full md:w-1/3 p-4 pl-24">
+        <Image
+          src={content.imgSource}
+          alt={content.imgAlt}
+          additionalClasses=""
         />
       </div>
-      <div className="text w-full md:w-2/3">
-        {blockData.title && <h3>{blockData.title}</h3>}
+      <div className="text w-full md:w-2/3 p-4 pl-24 relative">
+        {content.title && <h3 className="">{content.title}</h3>}
         <p>Hallo hier wat tekst</p>
-        {blockData.buttonLink && (
-          <Link className="btn-blue" href={blockData.buttonLink}>
-            {blockData.buttonText}
+        {content.buttonLink && (
+          <Link
+            className="btn-blue absolute bottom-8"
+            href={content.buttonLink}
+          >
+            {content.buttonText}
           </Link>
         )}
       </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between p-8 bg-white">
+    <header className="flex flex-row justify-between p-8 bg-white">
       <div className="p-4 ">
         <Link href="/">Logo</Link>
       </div>
@@ -17,6 +17,6 @@ export default function Header() {
           About
         </Link>
       </nav>
-    </div>
+    </header>
   );
 }
