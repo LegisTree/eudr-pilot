@@ -3,7 +3,7 @@ import Image from "./Image";
 
 export default function Card({ cardData }) {
   return (
-    <div className="group flex relative rounded flex-col items-center w-full md:w-5/12 min-h-96  m-8 h-[360px] xl:h-[400px] overflow-hidden">
+    <div className="group flex relative rounded flex-col items-center max-w-md min-h-96  m-8 h-[360px] xl:h-[400px] overflow-hidden">
       <span className="overflow-hidden text-center relative w-full h-1/2">
         <Image
           src={cardData.imgSource}
@@ -14,7 +14,7 @@ export default function Card({ cardData }) {
       <span className="flex flex-col items-center h-1/2 mt-4 gap-2 overflow-hidden">
         <span className="h-3/4 flex flex-col items-center text-center">
           <h3 className="block font-bold line-clamp-2">{cardData.title}</h3>
-          <p className="line-clamp-3 ">{cardData.text}</p>
+          <p className="line-clamp-3 pb-0">{cardData.text}</p>
         </span>
 
         <span className="h-1/4">

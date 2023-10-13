@@ -1,5 +1,4 @@
 export default function Image({ src, alt, additionalClasses }) {
-  console.log(src, alt, additionalClasses);
   return (
     <span>
       {/* eslint-disable @next/next/no-img-element */}
