@@ -2,7 +2,7 @@ export default function ToolPage() {
   return (
     <div className="pl-4 md:pl-24">
       <p>
-        Deze pagina is onder constructie. Binnenkort komt hier de EUDR pagina.
+        Deze pagina is onder constructie. Binnenkort komt hier de Tool pagina.
       </p>
     </div>
   );
